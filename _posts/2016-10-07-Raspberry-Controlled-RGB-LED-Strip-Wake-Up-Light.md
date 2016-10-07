@@ -77,3 +77,17 @@ I need something to stick my MOSFETs etc into, so this seemed like a good option
 And of course some jumper cables to connect things together.
 
 <img src="/images/jumper-cables.jpg" width="200" />
+
+### Profile for the LED - ?
+
+I haven't decided on a profile for the LED strip yet. This will likely be the most expensive
+part of this project - but also most visible
+
+### Housing
+
+Once I have everything else done, I plan to 3D print a housing for the Raspberry Pi and the
+other components. I'll likely attach this to the underside of the shelf.
+
+### Now we wait
+
+Components are being shipped as of 7.10.2016. Now we wait.
