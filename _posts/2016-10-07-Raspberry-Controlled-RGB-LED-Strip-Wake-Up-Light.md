@@ -12,6 +12,10 @@ for me, but I just felt like doing something with my Raspberry Pi.
 So I embarked on a journey to make a Raspberry Pi controlled RGB LED strip wake-up lamp
 that would fit on the shelf. I'm going to build this cheap, but with some degree of quality (hopefully)
 
+The goal is to create a wake-up lamp that starts with a dim blue light perhaps 30 minutes before
+wake-up and gradually increase to a warm white. I want to be able to configure it, ideally through a
+web interface I can access at home on my phone. I'll settle for a console configuration first though
+
 Detailed instructions will come in here later :)
 
 <h2>Components</h2>
