@@ -46,4 +46,12 @@ Luckily, I found <a href="http://www.bajdi.com/testing-switch-mode-voltage-regul
 I searched for the KIM-055L models online and, although the description doesn't say that, I'm
 confident <a href="https://www.aliexpress.com/item/24V-12V-To-5V-5A-DC-DC-Buck-Step-Down-Power-Supply-Module-Synchronous-Rectification-Power/32689938167.html">this</a> model is such.
 
-![_config.yml]({{ site.baseurl }}/images/step-down.jpg =300x)
+<img src="/images/step-down.jpg" width="200" />
+
+<h3>MOSFETs $2.95</h3>
+
+Now, I didn't know what MOSFETs were. Turned out, they're like transistors i.e. you control
+the high voltage (12V) going to the LEDs with lower voltage (~2.5V) coming from the Raspberry
+GPIO ports. You need to do this as the GPIO ports will not have enough voltage or current to
+drive the LEDs. Instead, we command the MOSFETs with the Raspberry to pass through the higher
+voltage from the 12V source to the LEDs.  
