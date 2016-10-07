@@ -14,11 +14,11 @@ that would fit on the shelf. I'm going to build this cheap, but with some degree
 
 The goal is to create a wake-up lamp that starts with a dim blue light perhaps 30 minutes before
 wake-up and gradually increase to a warm white. I want to be able to configure it, ideally through a
-web interface I can access at home on my phone. I'll settle for a console configuration first though
+web interface I can access at home on my phone. I'll settle for a console configuration first though.
 
 Detailed instructions will come in here later :)
 
-<h2>Components</h2>
+## Components
 
 | Raspberry Pi Model B      | $35    |
 | USB Wifi antenna          | $1.68  |
@@ -30,7 +30,7 @@ Detailed instructions will come in here later :)
 |                           |        |
 | Total                     | $54.75 |
 
-<h3>USB Wifi Antenna - $1.68</h3>
+### USB Wifi Antenna - $1.68
 
 So I already have a Raspberry Pi Model B, which is plenty for my need.
 
@@ -40,7 +40,7 @@ from AliExpress</a> for it for $1.68.
 
 <img src="/images/usb-wifi-antenna.jpg" width="200" />
 
-<h3>RGB Led strip and power supply - $9.67</h3>
+### RGB Led strip and power supply - $9.67
 
 I could power the Raspberry Pi and the LED strip separately, but I would need two power sockets.
 We only have two power sockets in the bedroom, so I want to leave the other for e.g. mobile phone
@@ -51,7 +51,7 @@ strip (max). I indend to use the same supply for my 5V Raspberry Pi, so a 3A sup
 
 <img src="/images/rgb-led-strip.jpg" width="200" />
 
-<h3>12V to 5V step down switch regulator - $2.94</h3>
+### 12V to 5V step down switch regulator - $2.94
 
 I put a lot of research on this one. I learned that common linear regulators dissipate
 heat like crazy, and I feel my bedroom is warm enough. I also learned that 'switch regulators'
@@ -62,7 +62,7 @@ confident <a href="https://www.aliexpress.com/item/24V-12V-To-5V-5A-DC-DC-Buck-S
 
 <img src="/images/step-down.JPG" width="200" />
 
-<h3>MOSFETs - $2.95</h3>
+### MOSFETs - $2.95
 
 Now, I didn't know what MOSFETs were. Turned out, they're like transistors i.e. you control
 the high voltage (12V) going to the LEDs with lower voltage (~2.5V) coming from the Raspberry
@@ -70,13 +70,13 @@ GPIO ports. You need to do this as the GPIO ports will not have enough voltage o
 drive the LEDs. Instead, we command the MOSFETs with the Raspberry to pass through the higher
 voltage from the 12V source to the LEDs.  
 
-<h3>Breadboard - $0.96</h3>
+### Breadboard - $0.96
 
 I need something to stick my MOSFETs etc into, so this seemed like a good option.
 
 <img src="/images/breadboard.jpg" width="200" />
 
-<h3>Jumper cables - $1.55</h3>
+### Jumper cables - $1.55</h3>
 
 And of course some jumper cables to connect things together.
 
