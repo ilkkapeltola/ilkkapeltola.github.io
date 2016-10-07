@@ -9,3 +9,8 @@ for me, but I just felt like doing something with my Raspberry Pi.
 
 ![_config.yml]({{ site.baseurl }}/images/bed-shelf.jpg)
 
+So I embarked on a journey to make a Raspberry Pi controlled RGB LED strip wake-up lamp
+that would fit on the shelf. 
+
+<h2>Day 1</h2>
+Test
