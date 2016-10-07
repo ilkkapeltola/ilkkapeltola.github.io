@@ -16,6 +16,10 @@ Detailed instructions will come in here later :)
 
 <h2>Components</h2>
 
+| Component               | Price |
+| ----------------------- |:-----:| 
+| Raspberry Pi Model B    | $35   |
+
 <h3>USB Wifi Antenna - $1.68</h3>
 
 So I already have a Raspberry Pi Model B, which is plenty for my need.
