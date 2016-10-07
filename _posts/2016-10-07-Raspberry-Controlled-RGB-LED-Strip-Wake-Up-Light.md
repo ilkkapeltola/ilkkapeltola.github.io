@@ -24,7 +24,7 @@ I wanted to have it connected to the WiFi, so I decided to order a small
 <a href="https://www.aliexpress.com/item/Hot-Sale-Mini-PC-wifi-adapter-150M-USB-WiFi-antenna-Wireless-Computer-Network-Card-802-11n/32659894879.html">USB Wifi antenna 
 from AliExpress</a> for it for $1.68.
 
-![_config.yml]({{ site.baseurl }}/images/usb-wifi-antenna.jpg =300x)
+<img src="/images/usb-wifi-antenna.jpg" width="200" />
 
 <h3>RGB Led strip and power supply $9.67</h3>
 
@@ -46,7 +46,7 @@ Luckily, I found <a href="http://www.bajdi.com/testing-switch-mode-voltage-regul
 I searched for the KIM-055L models online and, although the description doesn't say that, I'm
 confident <a href="https://www.aliexpress.com/item/24V-12V-To-5V-5A-DC-DC-Buck-Step-Down-Power-Supply-Module-Synchronous-Rectification-Power/32689938167.html">this</a> model is such.
 
-<img src="images/step-down.jpg" width="200" />
+<img src="/images/step-down.JPG" width="200" />
 
 <h3>MOSFETs $2.95</h3>
 
@@ -55,3 +55,5 @@ the high voltage (12V) going to the LEDs with lower voltage (~2.5V) coming from 
 GPIO ports. You need to do this as the GPIO ports will not have enough voltage or current to
 drive the LEDs. Instead, we command the MOSFETs with the Raspberry to pass through the higher
 voltage from the 12V source to the LEDs.  
+
+
