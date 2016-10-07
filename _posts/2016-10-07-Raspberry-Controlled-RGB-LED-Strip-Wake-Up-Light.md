@@ -102,7 +102,7 @@ to connect things together.
 ### Profile for the LED - ?
 
 I haven't decided on a profile for the LED strip yet. This will likely be the most expensive
-part of this project - but also most visible
+part of this project - but also the most visible.
 
 ### Housing
 
