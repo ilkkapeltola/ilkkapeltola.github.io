@@ -35,9 +35,9 @@ According to <a href="https://learn.adafruit.com/rgb-led-strips/current-draw">th
 each 3-LED-segment draws 20mA from a 12V power suplly, so this would mean 2.4A max for a 2m long
 strip (max). I indend to use the same supply for my 5V Raspberry Pi, so a 3A supply should suffice.
 
-![_config.yml]({{ site.baseurl }}/images/rgb-led-strip.jpg =300x)
+<img src="/images/rgb-led-strip.jpg" width="200" />
 
-<h3>12V to 5V step down switch regulator $2.94<h3>
+<h3>12V to 5V step down switch regulator $2.94</h3>
 
 I put a lot of research on this one. I learned that common linear regulators dissipate
 heat like crazy, and I feel my bedroom is warm enough. I also learned that 'switch regulators'
@@ -46,7 +46,7 @@ Luckily, I found <a href="http://www.bajdi.com/testing-switch-mode-voltage-regul
 I searched for the KIM-055L models online and, although the description doesn't say that, I'm
 confident <a href="https://www.aliexpress.com/item/24V-12V-To-5V-5A-DC-DC-Buck-Step-Down-Power-Supply-Module-Synchronous-Rectification-Power/32689938167.html">this</a> model is such.
 
-<img src="/images/step-down.jpg" width="200" />
+<img src="images/step-down.jpg" width="200" />
 
 <h3>MOSFETs $2.95</h3>
 
