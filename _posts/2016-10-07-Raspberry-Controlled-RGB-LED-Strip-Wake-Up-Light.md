@@ -24,7 +24,7 @@ I wanted to have it connected to the WiFi, so I decided to order a small
 <a href="https://www.aliexpress.com/item/Hot-Sale-Mini-PC-wifi-adapter-150M-USB-WiFi-antenna-Wireless-Computer-Network-Card-802-11n/32659894879.html">USB Wifi antenna 
 from AliExpress</a> for it for $1.68.
 
-![_config.yml]({{ site.baseurl }}/images/usb-wifi-antenna.jpg)
+![_config.yml]({{ site.baseurl }}/images/usb-wifi-antenna.jpg =300px)
 
 <h3>RGB Led strip and power supply</h3>
 
@@ -35,8 +35,11 @@ According to <a href="https://learn.adafruit.com/rgb-led-strips/current-draw">th
 each 3-LED-segment draws 20mA from a 12V power suplly, so this would mean 2.4A max for a 2m long
 strip (max). I indend to use the same supply for my 5V Raspberry Pi, so a 3A supply should suffice.
 
-![_config.yml]({{ site.baseurl }}/images/rgb-led-strip.jpg)
+![_config.yml]({{ site.baseurl }}/images/rgb-led-strip.jpg =300px)
 
 <h3>12V to 5V step down switch regulator<h3>
 
+I put a lot of research on this one. I learned that common linear regulators dissipate
+heat like crazy, and I feel my bedroom is warm enough. I also learned that 'switch regulators'
+should be more efficient. I found AliExpress to be 
 
