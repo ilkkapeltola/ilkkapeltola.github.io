@@ -9,7 +9,7 @@ name: Ilkka Peltola
 description: All kinds of things
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: ![_config.yml]({{ site.baseurl }}/images/avatar.jpg)
+avatar: http://ilkkapeltola.github.io/images/avatar.jpg
 
 #
 # Flags below are optional
