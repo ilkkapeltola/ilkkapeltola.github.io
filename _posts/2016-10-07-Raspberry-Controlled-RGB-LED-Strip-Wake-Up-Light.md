@@ -64,10 +64,10 @@ voltage from the 12V source to the LEDs.
 
 I need something to stick my MOSFETs etc into, so this seemed like a good option.
 
-<img src="/images/breadboard.JPG" width="200" />
+<img src="/images/breadboard.jpg" width="200" />
 
 <h3>Jumper cables $1.55</h3>
 
 And of course some jumper cables to connect things together.
 
-<img src="/images/jumper-cables.JPG" width="200" />
+<img src="/images/jumper-cables.jpg" width="200" />
