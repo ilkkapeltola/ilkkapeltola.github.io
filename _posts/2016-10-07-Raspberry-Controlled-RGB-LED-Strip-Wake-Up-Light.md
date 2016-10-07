@@ -56,4 +56,10 @@ GPIO ports. You need to do this as the GPIO ports will not have enough voltage o
 drive the LEDs. Instead, we command the MOSFETs with the Raspberry to pass through the higher
 voltage from the 12V source to the LEDs.  
 
+<h3>Breadboard $0.96</h3>
 
+<img src="/images/breadboard.JPG" width="200" />
+
+<h3>Jumper cables $1.55</h3>
+
+<img src="/images/jumper-cables.JPG" width="200" />
