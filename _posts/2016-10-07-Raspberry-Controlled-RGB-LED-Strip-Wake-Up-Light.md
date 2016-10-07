@@ -49,6 +49,10 @@ According to <a href="https://learn.adafruit.com/rgb-led-strips/current-draw">th
 each 3-LED-segment draws 20mA from a 12V power suplly, so this would mean 2.4A max for a 2m long
 strip (max). I indend to use the same supply for my 5V Raspberry Pi, so a 3A supply should suffice.
 
+I ended up ordering <a href="https://www.aliexpress.com/item/Ultra-Bright-5M-5050-RGB-LED-Strip-Non-Waterproof-300-Led-Strip-Light-Flexible-Ribbon-Tape/32550636554.html">
+this model</a>, which will also let me test out the strip before any other development and how it
+will fit into the bedroom.
+
 <img src="/images/rgb-led-strip.jpg" width="200" />
 
 ### 12V to 5V step down switch regulator - $2.94
@@ -68,7 +72,11 @@ Now, I didn't know what MOSFETs were. Turned out, they're like transistors i.e. 
 the high voltage (12V) going to the LEDs with lower voltage (~2.5V) coming from the Raspberry
 GPIO ports. You need to do this as the GPIO ports will not have enough voltage or current to
 drive the LEDs. Instead, we command the MOSFETs with the Raspberry to pass through the higher
-voltage from the 12V source to the LEDs.  
+voltage from the 12V source to the LEDs.
+
+These [IRLZ34N MOSFETs](https://www.aliexpress.com/item/Free-shipping-5pcs-lot-IRLZ34N-30A-55V-IRLZ34NPBF-TO-220-new-original/32591803920.html) - I THINK - should be pretty good fit for my needs.
+
+<img src="/images/mosfets.jpg" width="200" />
 
 ### Breadboard - $0.96
 
@@ -91,6 +99,11 @@ part of this project - but also most visible
 
 Once I have everything else done, I plan to 3D print a housing for the Raspberry Pi and the
 other components. I'll likely attach this to the underside of the shelf.
+
+### Programming
+
+I imagine I will be using CRON to command a <a href="https://pypi.python.org/pypi/RPi.GPIO">
+RPi.GPIO</a> python script. Let's see how that develops.
 
 ### Now we wait
 
