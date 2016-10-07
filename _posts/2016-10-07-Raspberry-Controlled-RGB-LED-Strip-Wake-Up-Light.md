@@ -74,19 +74,28 @@ GPIO ports. You need to do this as the GPIO ports will not have enough voltage o
 drive the LEDs. Instead, we command the MOSFETs with the Raspberry to pass through the higher
 voltage from the 12V source to the LEDs.
 
-These [IRLZ34N MOSFETs](https://www.aliexpress.com/item/Free-shipping-5pcs-lot-IRLZ34N-30A-55V-IRLZ34NPBF-TO-220-new-original/32591803920.html) - I THINK - should be pretty good fit for my needs.
+These [IRLZ34N MOSFETs](https://www.aliexpress.com/item/Free-shipping-5pcs-lot-IRLZ34N-30A-55V-IRLZ34NPBF-TO-220-new-original/32591803920.html)
+- I THINK - should be pretty good fit for my needs. The threshold voltage is 1.0-2.0V, which
+is less than what Raspberry can produce, meaning I should get the MOSFETs fully open (and
+the lights fully brigh). Yet, they can handle up to 16V Gate-to-Source voltage, which to my
+understanding of electronics should suffice. So I won't burn them, but they should be able
+to provide all the power that's needed for the lights.
 
 <img src="/images/mosfets.jpg" width="200" />
 
 ### Breadboard - $0.96
 
-I need something to stick my MOSFETs etc into, so this seemed like a good option.
+I need something to stick my MOSFETs etc into, so
+[this](https://www.aliexpress.com/item/Free-Shipping-1pcs-DIY-400-Points-Solderless-Bread-Board-Breadboard-400-PCB-Test-Board-for-ATMEGA/32657614549.html)
+seemed like a good option.
 
 <img src="/images/breadboard.jpg" width="200" />
 
 ### Jumper cables - $1.55</h3>
 
-And of course some jumper cables to connect things together.
+And of course some
+[jumper cables](https://www.aliexpress.com/item/Free-shipping-Dupont-line-120pcs-10cm-male-to-male-male-to-female-and-female-to-female/32376063784.html)
+to connect things together.
 
 <img src="/images/jumper-cables.jpg" width="200" />
 
