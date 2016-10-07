@@ -16,8 +16,6 @@ Detailed instructions will come in here later :)
 
 <h2>Components</h2>
 
-| Component                 | Price  |
-| ------------------------- |:------:| 
 | Raspberry Pi Model B      | $35    |
 | USB Wifi antenna          | $1.68  |
 | RGB LED strip w/ power    | $9.67  |
@@ -25,7 +23,7 @@ Detailed instructions will come in here later :)
 | IRLZ34N MOSFETs           | $2.95  |
 | Breadboard                | $0.96  |
 | Jumper wires              | $1.55  |
-| ------------------------- |:------:|
+|                           |        |
 | Total                     | $54.75 |
 
 <h3>USB Wifi Antenna - $1.68</h3>
