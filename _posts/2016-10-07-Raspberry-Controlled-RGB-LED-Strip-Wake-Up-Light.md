@@ -134,7 +134,7 @@ A python script runs the wake-up sequence
 
 ### Web UI
 
-<img src="/images/ui1.png" width="200" /> <img src="/images/ui2.png" width="200" />
+<img src="/images/ui1.png" width="320" /> <img src="/images/ui2.png" width="320" />
 
 
 I imagine I will be using CRON to command a <a href="https://pypi.python.org/pypi/RPi.GPIO">
