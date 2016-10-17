@@ -113,16 +113,16 @@ part of this project - but also the most visible.
 Once I have everything else done, I plan to 3D print a housing for the Raspberry Pi and the
 other components. I'll likely attach this to the underside of the shelf.
 
-### Programming
+## Programming
 
-#### Architecture
+### Architecture
 
 Crontab is used to schedule the wake-up script
 A web page serves the UI for configuring the wake-up schedule
 A controller saves the configuration to SQLite and updates the crontab
 A python script runs the wake-up sequence
 
-##### Web UI
+#### Web UI
 
 <img src="/images/ui1.png" width="200" /> <img src="/images/ui2.png" width="200" />
 
@@ -130,6 +130,6 @@ A python script runs the wake-up sequence
 I imagine I will be using CRON to command a <a href="https://pypi.python.org/pypi/RPi.GPIO">
 RPi.GPIO</a> python script.
 
-### Now we wait
+## Now we wait
 
 Components are being shipped as of 7.10.2016. Now we wait.
