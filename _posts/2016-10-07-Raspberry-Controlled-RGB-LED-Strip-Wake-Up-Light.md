@@ -38,6 +38,12 @@ Detailed instructions will come in here later :)
 |                           |        |
 | Total                     | $54.75 |
 
+## Raspberry pi - $35
+
+This was something I already had. It's one of the first model Bs.
+
+<img src="/images/raspi.jpg" width="480" />
+
 ## USB Wifi Antenna - $1.68
 
 So I already have a Raspberry Pi Model B, which is plenty for my need.
@@ -112,7 +118,7 @@ to connect things together.
 I haven't decided on a profile for the LED strip yet. This will likely be the most expensive
 part of this project - but also the most visible.
 
-## Housing
+## Housing - 3D printed free
 
 Once I have everything else done, I plan to 3D print a housing for the Raspberry Pi and the
 other components. I'll likely attach this to the underside of the shelf.
