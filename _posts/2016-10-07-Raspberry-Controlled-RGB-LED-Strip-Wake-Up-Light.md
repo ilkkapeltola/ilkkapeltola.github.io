@@ -3,6 +3,11 @@ layout: post
 title: Raspberry Pi Controlled RGB LED Strip Wake-Up Lamp
 ---
 
+* TOC
+{:toc}
+
+# Project overview
+
 For a long time I've wanted a wake-up lamp. In our new appartment, there simply
 isn't room for a traditional one. I'm sure there would be some commercial alternatives
 for me, but I just felt like doing something with my Raspberry Pi.
@@ -18,11 +23,10 @@ web interface I can access at home on my phone. I'll settle for a console config
 
 Detailed instructions will come in here later :)
 
-* TOC
-{:toc}
 
 
-## Components
+
+# Components
 
 | Raspberry Pi Model B      | $35    |
 | USB Wifi antenna          | $1.68  |
@@ -34,7 +38,7 @@ Detailed instructions will come in here later :)
 |                           |        |
 | Total                     | $54.75 |
 
-### USB Wifi Antenna - $1.68
+## USB Wifi Antenna - $1.68
 
 So I already have a Raspberry Pi Model B, which is plenty for my need.
 
@@ -44,7 +48,7 @@ from AliExpress</a> for it for $1.68.
 
 <img src="/images/usb-wifi-antenna.jpg" width="200" />
 
-### RGB Led strip and power supply - $9.67
+## RGB Led strip and power supply - $9.67
 
 I could power the Raspberry Pi and the LED strip separately, but I would need two power sockets.
 We only have two power sockets in the bedroom, so I want to leave the other for e.g. mobile phone
@@ -59,7 +63,7 @@ will fit into the bedroom.
 
 <img src="/images/rgb-led-strip.jpg" width="200" />
 
-### 12V to 5V step down switch regulator - $2.94
+## 12V to 5V step down switch regulator - $2.94
 
 I put a lot of research on this one. I learned that common linear regulators dissipate
 heat like crazy, and I feel my bedroom is warm enough. I also learned that 'switch regulators'
@@ -70,7 +74,7 @@ confident <a href="https://www.aliexpress.com/item/24V-12V-To-5V-5A-DC-DC-Buck-S
 
 <img src="/images/step-down.JPG" width="200" />
 
-### MOSFETs - $2.95
+## MOSFETs - $2.95
 
 Now, I didn't know what MOSFETs were. Turned out, they're like transistors i.e. you control
 the high voltage (12V) going to the LEDs with lower voltage (~2.5V) coming from the Raspberry
@@ -87,7 +91,7 @@ to provide all the power that's needed for the lights.
 
 <img src="/images/mosfets.jpg" width="200" />
 
-### Breadboard - $0.96
+## Breadboard - $0.96
 
 I need something to stick my MOSFETs etc into, so
 [this](https://www.aliexpress.com/item/Free-Shipping-1pcs-DIY-400-Points-Solderless-Bread-Board-Breadboard-400-PCB-Test-Board-for-ATMEGA/32657614549.html)
@@ -95,7 +99,7 @@ seemed like a good option.
 
 <img src="/images/breadboard.jpg" width="200" />
 
-### Jumper cables - $1.55</h3>
+## Jumper cables - $1.55
 
 And of course some
 [jumper cables](https://www.aliexpress.com/item/Free-shipping-Dupont-line-120pcs-10cm-male-to-male-male-to-female-and-female-to-female/32376063784.html)
@@ -103,26 +107,26 @@ to connect things together.
 
 <img src="/images/jumper-cables.jpg" width="200" />
 
-### Profile for the LED - ?
+## Profile for the LED - ?
 
 I haven't decided on a profile for the LED strip yet. This will likely be the most expensive
 part of this project - but also the most visible.
 
-### Housing
+## Housing
 
 Once I have everything else done, I plan to 3D print a housing for the Raspberry Pi and the
 other components. I'll likely attach this to the underside of the shelf.
 
-## Programming
+# Programming
 
-### Architecture
+## Architecture
 
 Crontab is used to schedule the wake-up script
 A web page serves the UI for configuring the wake-up schedule
 A controller saves the configuration to SQLite and updates the crontab
 A python script runs the wake-up sequence
 
-#### Web UI
+### Web UI
 
 <img src="/images/ui1.png" width="200" /> <img src="/images/ui2.png" width="200" />
 
@@ -130,6 +134,6 @@ A python script runs the wake-up sequence
 I imagine I will be using CRON to command a <a href="https://pypi.python.org/pypi/RPi.GPIO">
 RPi.GPIO</a> python script.
 
-## Now we wait
+# Now we wait
 
 Components are being shipped as of 7.10.2016. Now we wait.
