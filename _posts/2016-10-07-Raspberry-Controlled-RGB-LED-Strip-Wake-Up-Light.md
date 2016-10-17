@@ -111,8 +111,20 @@ other components. I'll likely attach this to the underside of the shelf.
 
 ### Programming
 
+#### Architecture
+
+Crontab is used to schedule the wake-up script
+A web page serves the UI for configuring the wake-up schedule
+A controller saves the configuration to SQLite and updates the crontab
+A python script runs the wake-up sequence
+
+##### Web UI
+
+<img src="/images/ui1.png" width="200" /> <img src="/images/ui2.png" width="200" />
+
+
 I imagine I will be using CRON to command a <a href="https://pypi.python.org/pypi/RPi.GPIO">
-RPi.GPIO</a> python script. Let's see how that develops.
+RPi.GPIO</a> python script.
 
 ### Now we wait
 
