@@ -18,6 +18,10 @@ web interface I can access at home on my phone. I'll settle for a console config
 
 Detailed instructions will come in here later :)
 
+* TOC
+{:toc}
+
+
 ## Components
 
 | Raspberry Pi Model B      | $35    |
