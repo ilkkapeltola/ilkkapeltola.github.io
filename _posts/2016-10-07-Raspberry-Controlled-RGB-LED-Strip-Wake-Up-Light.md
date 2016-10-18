@@ -134,13 +134,31 @@ A python script runs the wake-up sequence
 
 ### Web UI
 
-I put nginx, php and sqlite on the Raspberry. The first UI looks like this:
+I put nginx, php and sqlite on the Raspberry.
+The UI sends the config to my controller.
+The first UI looks like this:
 
 <img src="/images/ui1.png" width="320" /> <img src="/images/ui2.png" width="320" />
 
+### controller
+
+The controller is fairly simple.
+It takes the settings, stores them to the SQLite database and installs a crontab with the
+same schedule.
+
 ### Crontab
 
-My web controller will 
+I'm using my php controller to write the crontab settings to a file and then using a console command to
+install that file to cron. For testing purposes, I'm writing the output of the cron script to a file too.
+
+```
+0 7 * * Monday python /var/www/cron/wul.py > /var/www/cron/cron.log
+15 7 * * Tuesday python /var/www/cron/wul.py > /var/www/cron/cron.log
+30 7 * * Wednesday python /var/www/cron/wul.py > /var/www/cron/cron.log
+45 7 * * Thursday python /var/www/cron/wul.py > /var/www/cron/cron.log
+0 8 * * Friday python /var/www/cron/wul.py > /var/www/cron/cron.log
+*/30 * * * * python /var/www/cron/wul.py > /var/www/cron/cron.log
+```
 
 ### Wake-up sequence
 
@@ -160,6 +178,6 @@ Pretty neat, eh? And ending in a nice warm yellow.
 
 <img src="/images/sunrise.PNG" height="300" /> <img src="/images/rgb.PNG" height="300" />
 
-# Now we wait
+# Waiting for components
 
-Components are being shipped as of 7.10.2016. Now we wait.
+Still waiting for the components to arrive.
