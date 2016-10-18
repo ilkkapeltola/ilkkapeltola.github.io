@@ -38,6 +38,8 @@ Detailed instructions will come in here later :)
 |                           |        |
 | Total                     | $54.75 |
 
+Still waiting these to arrive
+
 ## Raspberry pi - $35
 
 This was something I already had. It's one of the first model Bs.
@@ -177,7 +179,3 @@ I plotted the curves using [fooplot.com](foolpot.com)
 Pretty neat, eh? And ending in a nice warm yellow.
 
 <img src="/images/sunrise.PNG" height="300" /> <img src="/images/rgb.PNG" height="300" />
-
-# Waiting for components
-
-Still waiting for the components to arrive.
