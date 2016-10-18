@@ -149,7 +149,7 @@ RPi.GPIO</a> python script.
 
 The sunrise will follow something of a following color spectrum:
 
-<img src="/images/sunrise.PNG" width="320" />
+<img src="/images/sunrise.PNG" height="400" /> <img src="/images/rgb.PNG" height="400" />
 
 # Now we wait
 
