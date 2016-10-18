@@ -134,11 +134,22 @@ A python script runs the wake-up sequence
 
 ### Web UI
 
+I put nginx, php and sqlite on the Raspberry. The first UI looks like this:
+
 <img src="/images/ui1.png" width="320" /> <img src="/images/ui2.png" width="320" />
 
+### Crontab
+
+My web controller will 
+
+### Wake-up sequence
 
 I imagine I will be using CRON to command a <a href="https://pypi.python.org/pypi/RPi.GPIO">
 RPi.GPIO</a> python script.
+
+The sunrise will follow something of a following color spectrum:
+
+<img src="/images/sunrise.png" width="320" />
 
 # Now we wait
 
