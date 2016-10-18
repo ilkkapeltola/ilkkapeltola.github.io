@@ -178,4 +178,4 @@ Blue: -30 + 100 / (1+0.0002*abs(x-20)^3) + 240 / (1 + e^(-0.1(x-70)))
 I plotted the curves using [fooplot.com](foolpot.com)
 Pretty neat, eh? And ending in a nice warm yellow.
 
-<img src="/images/sunrise.PNG" height="300" /> <img src="/images/rgb.PNG" height="300" />
+<img src="/images/sunrise.PNG" height="300" /> <img rel="image_src" src="/images/rgb.PNG" height="300" />
