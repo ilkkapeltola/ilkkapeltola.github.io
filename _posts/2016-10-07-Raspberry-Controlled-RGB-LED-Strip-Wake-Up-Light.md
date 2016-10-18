@@ -148,11 +148,13 @@ I imagine I will be using CRON to command a <a href="https://pypi.python.org/pyp
 RPi.GPIO</a> python script.
 
 The sunrise will follow something of a following color spectrum:
-'''
+
+```
 Red: 255 / (1 + e^(-0.07(x-60)))
 Green: 255 / (1 + e^(-0.09(x-75)))
 Blue: -30 + 100 / (1+0.0002*abs(x-20)^3) + 240 / (1 + e^(-0.1(x-70)))
-'''
+```
+
 I plotted the curves using [fooplot.com](foolpot.com)
 Pretty neat, eh? And ending in a nice warm yellow.
 
