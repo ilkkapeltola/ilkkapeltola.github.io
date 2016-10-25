@@ -35,6 +35,7 @@ Detailed instructions will come in here later :)
 | IRLZ34N MOSFETs           | $2.95  |
 | Breadboard                | $0.96  |
 | Jumper wires              | $1.55  |
+| Aluminum Profile          | $50.06 |
 |                           |        |
 | Total                     | $54.75 |
 
@@ -115,7 +116,7 @@ to connect things together.
 
 <img src="/images/jumper-cables.jpg" width="200" />
 
-## Profile for the LED - 46.10 €
+## Profile for the LED - $50.06
 
 This turned out to be the most expensive part of the project, by far.
 Since the LED strip will be in the corner of the shelf, I wanted something that was in an angle.
