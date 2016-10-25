@@ -122,7 +122,7 @@ This turned out to be the most expensive part of the project, by far.
 Since the LED strip will be in the corner of the shelf, I wanted something that was in an angle.
 This way the light hits more the center of the room rather than just the wall above our heads.
 
-<img src="images/alu_profile.jpg" width="200" />
+<img src="/images/alu_profile.jpg" width="200" />
 Image stolen from [valaisinliike.fi](http://www.valaisinliike.fi/tuotteet/LED-nauhat-kiskot-ja-tarvikkeet-LED-alumiinilistat-ja-tarvikkeet/LED-alumiiniprofiili-KULMA-ALUMIINI-TM83050020)
 
 ## Housing - 3D printed free
