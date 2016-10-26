@@ -132,7 +132,8 @@ and attach it with screws to the underside of the shelf.
 
 Like so:
 
-<img src="/images/chassis.PNG" width="300" /> 
+<img src="/images/chassis.PNG" width="300" />
+
 
 # Programming
 
