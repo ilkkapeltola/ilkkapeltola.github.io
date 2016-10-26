@@ -127,8 +127,12 @@ Image stolen from [valaisinliike.fi](http://www.valaisinliike.fi/tuotteet/LED-na
 
 ## Housing - 3D printed free
 
-Once I have everything else done, I plan to 3D print a housing for the Raspberry Pi and the
-other components. I'll likely attach this to the underside of the shelf.
+Plan is to print a 'box' of roughly 15cm x 19cm for the RasPi plus the other electronics,
+and attach it with screws to the underside of the shelf.
+
+Like so:
+
+<img src="/images/chassis.PNG" width="200" />
 
 # Programming
 
@@ -147,7 +151,7 @@ The first UI looks like this:
 
 <img src="/images/ui1.png" width="320" /> <img src="/images/ui2.png" width="320" />
 
-### controller
+### Controller
 
 The controller is fairly simple.
 It takes the settings, stores them to the SQLite database and installs a crontab with the
