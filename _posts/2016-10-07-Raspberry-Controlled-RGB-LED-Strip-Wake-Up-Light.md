@@ -94,7 +94,7 @@ voltage from the 12V source to the LEDs.
 These [IRLZ34N MOSFETs](https://www.aliexpress.com/item/Free-shipping-5pcs-lot-IRLZ34N-30A-55V-IRLZ34NPBF-TO-220-new-original/32591803920.html)
 - I THINK - should be pretty good fit for my needs. The threshold voltage is 1.0-2.0V, which
 is less than what Raspberry can produce, meaning I should get the MOSFETs fully open (and
-the lights fully brigh). Yet, they can handle up to 16V Gate-to-Source voltage, which to my
+the lights fully bright). Yet, they can handle up to 16V Gate-to-Source voltage, which to my
 understanding of electronics should suffice. So I won't burn them, but they should be able
 to provide all the power that's needed for the lights.
 
