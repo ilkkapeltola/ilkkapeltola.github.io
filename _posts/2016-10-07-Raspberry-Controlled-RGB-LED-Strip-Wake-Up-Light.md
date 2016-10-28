@@ -130,7 +130,9 @@ Image stolen from [valaisinliike.fi](http://www.valaisinliike.fi/tuotteet/LED-na
 Plan is to print a 'box' of roughly 15cm x 19cm for the RasPi plus the other electronics,
 and attach it with screws to the underside of the shelf.
 
-Like so:
+I used [tinkercad.com](tinkercad.com) to design my housing. Have a look at the
+[final design](https://www.tinkercad.com/things/fYwbuqZpBro-raspberry-pi-wake-up-light-housing)
+if you want.
 
 <img src="/images/chassis.PNG" width="600" />
 
