@@ -11,21 +11,17 @@ title: Raspberry Pi Controlled RGB LED Strip Wake-Up Lamp
 # Project overview
 
 For a long time I've wanted a wake-up lamp. In our new appartment, there simply
-isn't room for a traditional one. I'm sure there would be some commercial alternatives
+isn't room for a traditional one. I'm sure there are some commercial alternatives
 for me, but I just felt like doing something with my Raspberry Pi.
 
 ![_config.yml]({{ site.baseurl }}/images/bed-shelf.jpg)
 
 So I embarked on a journey to make a Raspberry Pi controlled RGB LED strip wake-up lamp
-that would fit on the shelf. I'm going to build this cheap, but with some degree of quality (hopefully)
+that would fit on the shelf. Intention was to build this cheap, but with some degree of quality.
 
-The goal is to create a wake-up lamp that starts with a dim blue light perhaps 30 minutes before
-wake-up and gradually increase to a warm white. I want to be able to configure it, ideally through a
-web interface I can access at home on my phone. I'll settle for a console configuration first though.
-
-Detailed instructions will come in here later :)
-
-
+The goal was to create a wake-up lamp that starts with a dim blue light 30 minutes before
+wake-up and gradually increase to a warm white. I wanted to be able to configure it, through a
+web interface I can access at home on my phone.
 
 
 # Components
@@ -66,10 +62,10 @@ We only have two power sockets in the bedroom, so I want to leave the other for 
 charging. I want the light to be bright, so I went for the 60 LEDs per meter option with 12V.
 According to <a href="https://learn.adafruit.com/rgb-led-strips/current-draw">the Interwebs</a>,
 each 3-LED-segment draws 20mA from a 12V power suplly, so this would mean 2.4A max for a 2m long
-strip (max). I indend to use the same supply for my 5V Raspberry Pi, so a 3A supply should suffice.
+strip (max). I wanted to use the same supply for my 5V Raspberry Pi, so a 3A supply is great.
 
 I ended up ordering <a href="https://www.aliexpress.com/item/Ultra-Bright-5M-5050-RGB-LED-Strip-Non-Waterproof-300-Led-Strip-Light-Flexible-Ribbon-Tape/32550636554.html">
-this model</a>, which will also let me test out the strip before any other development and how it
+this model</a>, which also let me test out the strip before any other development and how it
 will fit into the bedroom.
 
 <img src="/images/rgb-led-strip.jpg" width="200" />
@@ -80,8 +76,8 @@ I put a lot of research on this one. I learned that common linear regulators dis
 heat like crazy, and I feel my bedroom is warm enough. I also learned that 'switch regulators'
 should be more efficient. I found AliExpress to be quite conservative on the details on these.
 Luckily, I found <a href="http://www.bajdi.com/testing-switch-mode-voltage-regulators/"> this</a>.
-I searched for the KIM-055L models online and, although the description doesn't say that, I'm
-confident <a href="https://www.aliexpress.com/item/24V-12V-To-5V-5A-DC-DC-Buck-Step-Down-Power-Supply-Module-Synchronous-Rectification-Power/32689938167.html">this</a> model is such.
+I searched for the KIM-055L models online and decided to buy
+<a href="https://www.aliexpress.com/item/24V-12V-To-5V-5A-DC-DC-Buck-Step-Down-Power-Supply-Module-Synchronous-Rectification-Power/32689938167.html">this</a>.
 
 <img src="/images/step-down.JPG" width="200" />
 
@@ -94,10 +90,9 @@ drive the LEDs. Instead, we command the MOSFETs with the Raspberry to pass throu
 voltage from the 12V source to the LEDs.
 
 These [IRLZ34N MOSFETs](https://www.aliexpress.com/item/Free-shipping-5pcs-lot-IRLZ34N-30A-55V-IRLZ34NPBF-TO-220-new-original/32591803920.html)
-- I THINK - should be pretty good fit for my needs. The threshold voltage is 1.0-2.0V, which
+were pretty good fit for my needs. The threshold voltage is 1.0-2.0V, which
 is less than what Raspberry can produce, meaning I should get the MOSFETs fully open (and
-the lights fully bright). Yet, they can handle up to 16V Gate-to-Source voltage, which to my
-understanding of electronics should suffice. So I won't burn them, but they should be able
+the lights fully bright). Yet, they can handle up to 16V Gate-to-Source voltage. So I won't burn them, but they should be able
 to provide all the power that's needed for the lights.
 
 <img src="/images/mosfets.jpg" width="200" />
@@ -168,20 +163,21 @@ I'm using my php controller to write the crontab settings to a file and then usi
 install that file to cron. For testing purposes, I'm writing the output of the cron script to a file too.
 
 ```
-0 7 * * Monday python /var/www/cron/wul.py > /var/www/cron/cron.log
-15 7 * * Tuesday python /var/www/cron/wul.py > /var/www/cron/cron.log
-30 7 * * Wednesday python /var/www/cron/wul.py > /var/www/cron/cron.log
-45 7 * * Thursday python /var/www/cron/wul.py > /var/www/cron/cron.log
-0 8 * * Friday python /var/www/cron/wul.py > /var/www/cron/cron.log
-*/30 * * * * python /var/www/cron/wul.py > /var/www/cron/cron.log
+0 7 * * 1 /var/www/cron/wul.py > /var/www/cron/cron.log
+15 7 * * 2 /var/www/cron/wul.py > /var/www/cron/cron.log
+30 7 * * 3 /var/www/cron/wul.py > /var/www/cron/cron.log
+45 7 * * 4 /var/www/cron/wul.py > /var/www/cron/cron.log
+0 8 * * 5 /var/www/cron/wul.py > /var/www/cron/cron.log
 ```
 
 ### Wake-up sequence
 
-I imagine I will be using CRON to command a <a href="https://pypi.python.org/pypi/RPi.GPIO">
-RPi.GPIO</a> python script.
+I first used python to command a <a href="https://pypi.python.org/pypi/RPi.GPIO">
+RPi.GPIO</a> python script. However, the light flickered and flashed. I didn't know why.
+When I tried using the pigpiod, it was stable. Turned out RPi.GPIO uses software PWM and pigpiod uses
+hardware PWM. Switching to pigpiod solved the issue.
 
-The sunrise will follow something of a following color spectrum:
+The sunrise follows something of a following color spectrum:
 
 ```
 Red: 255 / (1 + e^(-0.07(x-60)))
