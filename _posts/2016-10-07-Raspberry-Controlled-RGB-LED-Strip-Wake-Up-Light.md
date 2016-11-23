@@ -3,6 +3,8 @@ layout: post
 title: Raspberry Pi Controlled RGB LED Strip Wake-Up Lamp
 ---
 
+<img src="/images/wul.gif" width="800" />
+
 * TOC
 {:toc}
 
